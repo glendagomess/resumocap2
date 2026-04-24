@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Resumo capítulo 2</title>
+</head>
+<body>
+
+    <h1>Capítulo 2 - Estruturando páginas web com HTML</h1>
+
+    <p>
+        HTML, junto com CSS e JavaScript, é uma das três principais linguagens importantes 
+        para o desenvolvimento frontend. Neste capítulo, você aprenderá sobre a linguagem HTML, 
+        que é usada para definir a estrutura das páginas web.
+    </p>
+
+    <h2>Estrutura</h2>
+
+    <img src="estre.png.png" alt="Estrutura da página HTML">
+    <h2>2.1 Versões do HTML</h2>
+
+<ul>
+    <li>
+        <strong>HTML (original):</strong> Publicado em 1992, baseado nas propostas de 
+        Tim Berners-Lee no CERN em 1989.
+    </li>
+
+    <li>
+        <strong>HTML 4.0 (1997):</strong> Importante por ser a versão em que o CSS foi disponibilizado.
+    </li>
+
+    <li>
+        <strong>XHTML 1.0:</strong> Reformulação do HTML segundo regras XML, mais rigorosas 
+        (atributos em letras minúsculas e sempre com valor).
+    </li>
+
+    <li>
+        <strong>HTML5 (2014):</strong> Substituiu versões anteriores do HTML e XHTML, 
+        adicionando novas funcionalidades e APIs para web.
+    </li>
+</ul>
+<h2>2.2 Usando os Elementos Mais Importantes</h2>
+
+<p>Coisas importantes para aprender em HTML:</p>
+
+<ul>
+    <li>Quais elementos existem</li>
+    <li>Quais atributos são usados para quais elementos</li>
+    <li>Onde cada elemento pode ser usado</li>
+</ul>
+
+    <h3>Exemplos de elementos importantes:</h3>
+
+    <h4>Cabeçalhos</h4>
+    <p>Seis níveis: &lt;h1&gt; a &lt;h6&gt;. O &lt;h1&gt; é o maior.</p>
+
+    <h4>Parágrafos</h4>
+    <p>Usamos a tag &lt;p&gt;.</p>
+
+    <h4>Formatação</h4>
+<p>
+    <i>Itálico</i>, 
+    <b>Negrito</b>, 
+    <em>Ênfase</em>, 
+    <strong>Destaque forte</strong>
+</p>
+
+    <h4>Sobrescrito e Subscrito</h4>
+    <p>x<sup>2</sup> e H<sub>2</sub>O</p>
+
+    <h4>Quebra de linha</h4>
+    <p>Linha 1<br>Linha 2</p>
+
+    <h4>Citações</h4>
+<blockquote>Esta é uma citação longa.</blockquote>
+<p>Citação curta: <q>exemplo</q></p>
+<p><cite>Nome da obra</cite></p>
+
+   <h4>Abreviações e definições</h4>
+<p><abbr title="HyperText Markup Language">HTML</abbr></p>
+<p><dfn>HTML</dfn> é uma linguagem de marcação.</p>
+ <h2>Atributos</h2>
+
+<p>
+    Elementos podem receber <strong>atributos</strong> para passar informações adicionais.<br>
+    Eles ficam na <i>tag de abertura</i>, com nome e valor entre aspas.
+</p>
+
+<p>
+    Exemplo de link:<br>
+    <code>&lt;a href="https://www.exemplo.com"&gt;Link&lt;/a&gt;</code>
+</p>
+
+<p>
+    Exemplo funcionando:<br>
+    <a href="https://www.exemplo.com" target="_blank">Abrir exemplo</a>
+</p>
+
+<p>
+    O atributo <strong>target="_blank"</strong> faz o link abrir em nova aba.<br>
+    Por padrão, abre na mesma aba.
+</p>
+
+<br>
+
+<h2>Arquivos HTML</h2>
+
+<p>
+    Páginas HTML são arquivos de texto simples com extensão:<br>
+    <b>.html</b> ou <b>.htm</b><br><br>
+    É comum salvar em uma pasta e abrir no navegador.
+</p>
+
+<br>
+
+<h2>Listas</h2>
+
+<p>
+    Tipos de listas:<br>
+    - <strong>Não ordenadas:</strong> &lt;ul&gt;<br>
+    - <strong>Ordenadas:</strong> &lt;ol&gt;<br>
+    - <strong>Definição:</strong> &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;
+</p>
+
+<h3>Exemplo lista não ordenada:</h3>
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+
+<h3>Exemplo lista ordenada:</h3>
+<ol>
+    <li>Primeiro</li>
+    <li>Segundo</li>
+</ol>
+
+<h3>Lista de definição:</h3>
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação</dd>
+</dl>
+
+<br>
+
+<h3>Lista aninhada:</h3>
+
+<ul>
+    <li>Fruit
+        <ul>
+            <li>Apples</li>
+            <li>Pears</li>
+            <li>Strawberries</li>
+        </ul>
+    </li>
+
+    <li>Vegetables
+        <ul>
+            <li>Carrots</li>
+            <li>Peppers</li>
+            <li>Tomatoes</li>
+        </ul>
+    </li>
+</ul>
+
+<br>
+
+<h2>Tipos de Links</h2>
+
+<p>
+    <strong>Externos:</strong> levam para outros sites (URL completa)<br>
+    <i>Exemplo:</i> https://...<br><br>
+
+    <strong>Relativos:</strong> páginas do mesmo site<br><br>
+
+    <strong>Internos:</strong> navegação dentro da própria página
+</p>
+ <h2>Links Relativos</h2>
+
+<p>
+    Usados para navegar entre páginas do <strong>mesmo site</strong>.<br>
+</p>
+    
+<p>
+    Em pastas diferentes, usamos <strong>../</strong> para voltar um nível:<br>
+    <code>&lt;a href="../index.html"&gt;Voltar&lt;/a&gt;</code>
+</p>
+
+<br>
+
+<h2>Links Internos (Âncoras)</h2>
+
+<p>
+    Servem para navegar <strong>dentro da mesma página</strong>.<br>
+    Primeiro definimos um <i>id</i> no elemento.
+</p>
+
+<p>
+    Exemplo:<br>
+    <code>&lt;h2 id="chapter01"&gt;Chapter 1&lt;/h2&gt;</code><br>
+    <code>&lt;a href="#chapter01"&gt;Ir para Chapter 1&lt;/a&gt;</code>
+</p>
+
+<br>
+
+<h2>Links para outra página com âncora</h2>
+
+<p>
+    Também é possível combinar URL + âncora:<br>
+</p>
+
+<p>
+    <code>&lt;a href="http://philipackermann.de/index.html#books"&gt;Books&lt;/a&gt;</code>
+</p>
+
+<br>
+
+<h2>Inclusão de Imagens</h2>
+
+<p>
+    A tag <strong>&lt;img&gt;</strong> é um elemento vazio.<br>
+    Ela usa atributos para funcionar:
+</p>
+
+<p>
+    <strong>src:</strong> caminho da imagem<br>
+    <strong>alt:</strong> texto alternativo<br>
+    <strong>title:</strong> texto ao passar o mouse
+</p>
+
+<p>
+    Exemplo de código:<br>
+    <code>
+        &lt;img src="images/profile.jpg" alt="Foto de perfil" title="Minha foto"/&gt;
+    </code>
+</p>
+</body>
+</html>
